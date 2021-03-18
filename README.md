@@ -6,6 +6,6 @@
 * Used Support Vector Machine Classifier with Radial Bias Function kernel to predict the sentiment.
 
 * Performance on validation data set (Accuracy):
-    * SVM: 0.78  
+    * SVM: 0.835  
     * Gaussian Naive Bayes: 0.73
     * Random Forest: 0.72

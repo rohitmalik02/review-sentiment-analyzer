@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import pickle
+import contractions
 
 dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter = '\t', quoting = 3)
 
@@ -12,7 +13,7 @@ from nltk.stem.porter import PorterStemmer
 corpus = []
 l = len(dataset)
 for i in range(0, l):
-  review = re.sub('[^a-zA-Z]', ' ', dataset['Review'][i])
+  review = re.sub('[^a-zA-Z]', ' ', contractions.fix(dataset['Review'][i]))
   review = review.lower()
   review = review.split()
   ps = PorterStemmer()
