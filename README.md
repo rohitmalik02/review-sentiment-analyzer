@@ -1,4 +1,6 @@
 # review-sentiment-analyzer
+https://review-sentiment-analyzer-api.herokuapp.com/
+
 * Flask API to perform Sentiment Analysis on a given user review of a restaurant
 
 * Used Python NLTK and Contractions module to preprocess text and sklearn module to implement a Bag of Words model (vectorization).
